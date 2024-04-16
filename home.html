@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homeStyle.css">
+    <script src="https://kit.fontawesome.com/6b7a877ee5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><h4>Travel Essentials</h4></li>
+            <li><a href="#">Short Vacation</a></li>
+            <li><a href="#">Long Vacation</a></li>
+            <li><a href="#">International Trip</a></li>
+            <li><a href="#">Hiking/Trekking</a></li>
+            <li><a href="#">Road Trip</a></li>
+            <li><a href="#">Corporate/Business Travel</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="hideOnMobile"></li><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="#">Community</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Help</a></li>
+            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <!-- END -->
+
+    <!-- CARDS -->
+    <div class="container py-5"> 
+        <h1 class="text-center" style="color: rgb(27, 100, 110);">Popular Getaways</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            <!--CARD 1-->
+            <div class="col">
+                <div class="card" style="border-radius: 30px;">
+                    <img src="./coorg.png" class="card-img-top-bottom" alt="...">
+                    <div class="card-body" style="padding: 25px; margin-top: -15px;">
+                      <h5 class="card-title">COORG</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit. Quisque eleifend orci eget elit rhoncus tincidunt. Nulla sed nulla a felis volutpat euismod et at eros.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <h3>950$</h3>
+                        <button class="btn btn-primary" style="border-radius: 50px;">View Other Packages</button>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 2-->
+            <div class="col">
+                <div class="card" style="border-radius: 30px;">
+                    <img src="./mysore.png" class="card-img-top-bottom" alt="...">
+                    <div class="card-body" style="padding: 25px; margin-top: -15px;">
+                      <h5 class="card-title">MYSORE</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit. Quisque eleifend orci eget elit rhoncus tincidunt. Nulla sed nulla a felis volutpat euismod et at eros.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <h3>400$</h3>
+                        <button class="btn btn-primary" style="border-radius: 50px;">View Other Packages</button>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 3-->
+            <div class="col">
+                <div class="card" style="border-radius: 30px;">
+                    <img src="./chikmagalur.png" class="card-img-top-bottom" alt="...">
+                    <div class="card-body" style="padding: 25px; margin-top: -15px;">
+                      <h5 class="card-title">CHIKMAGALUR</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit. Quisque eleifend orci eget elit rhoncus tincidunt. Nulla sed nulla a felis volutpat euismod et at eros.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <h3>650$</h3>
+                        <button class="btn btn-primary" style="border-radius: 50px;">View Other Packages</button>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 4-->
+            <div class="col">
+                <div class="card" style="border-radius: 30px;">
+                    <img src="./gokarna.png" class="card-img-top-bottom" alt="...">
+                    <div class="card-body" style="padding: 25px; margin-top: -15px;">
+                      <h5 class="card-title">GOKARNA</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit. Quisque eleifend orci eget elit rhoncus tincidunt. Nulla sed nulla a felis volutpat euismod et at eros.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <h3>950$</h3>
+                        <button class="btn btn-primary" style="border-radius: 50px;">View Other Packages</button>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 5-->
+            <div class="col">
+                <div class="card" style="border-radius: 30px;">
+                    <img src="./dandeli.png" class="card-img-top-bottom" alt="...">
+                    <div class="card-body" style="padding: 25px; margin-top: -15px;">
+                      <h5 class="card-title">DANDELI</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit. Quisque eleifend orci eget elit rhoncus tincidunt. Nulla sed nulla a felis volutpat euismod et at eros.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <h3>500$</h3>
+                        <button class="btn btn-primary" style="border-radius: 50px;">View Other Packages</button>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 6-->
+            <div class="col">
+                <div class="card" style="border-radius: 30px;">
+                    <img src="./hampi.png" class="card-img-top-bottom" alt="...">
+                    <div class="card-body" style="padding: 25px; margin-top: -15px;">
+                      <h5 class="card-title">HAMPI</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit. Quisque eleifend orci eget elit rhoncus tincidunt. Nulla sed nulla a felis volutpat euismod et at eros.</p>
+                    </div>
+                    <div class="d-flex justify-content-around mb-5">
+                        <h3>600$</h3>
+                        <button class="btn btn-primary" style="border-radius: 50px;">View Other Packages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

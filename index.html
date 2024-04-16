@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Web Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b7a877ee5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!--SIGN IN-->
+        <div class="form-box">
+            <h1>User Login</h1>
+            <form class="loginForm" method="post" name="form">
+                <div class="input-group">
+                    <!--Email-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Email" name="email" id="email">
+                    </div>
+                    <!--Password-->
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" id="pass">
+                    </div>
+                </div>
+                <!--Login button-->
+                <div class="btn-field">
+                    <button type="submit" id="signinBtn" onclick="func()">Sign in</button>
+                </div>
+            </form>
+        </div>
+        <!--END-->
+    </div>
+
+    <script>
+        function func(){
+
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pass").value;
+
+            if(email.length >= 8 && password.length >= 2){
+                window.location.assign("home.html");
+                alert("Login Successfull!");
+            }
+            else{
+                alert("Invalid Information");
+                return;
+            }
+            
+        }
+    </script>
+
+</body>
+</html>
